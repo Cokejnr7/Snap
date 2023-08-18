@@ -7,42 +7,64 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
 <nav>
-  <ul>
-    <a href=""><li>Features</li></a>
-    <a href=""><li>Company</li></a>
-    <a href=""><li>Careers</li></a>
-    <a href=""><li>Features</li></a>
-    <a href=""><li>About</li></a>
+  <div class="logo">
+  <img src="images/logo.svg" alt="logo">
+ </div>
+  <ul class="nav-links">
+    <a href="" class="nav-link">
+      <li>
+        <span>Features</span> 
+        <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+          <path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/>
+        </svg>
+      </li>
+    </a>
+    <a href="" class="nav-link">
+      <li>
+        <span>Company</span> 
+        <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+          <path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/>
+        </svg>
+      </li>
+    </a>
+    <a href="" class="nav-link"><li>Careers</li></a>
+    <a href="" class="nav-link"><li>About</li></a>
   </ul>
 
-  <ul>
-    <li>Login</li>
-    <li>Register</li>
+  <ul class="action">
+    <a href="" class="login"><li>Login</li></a>
+  <button><li>Register</li></button>
   </ul>
 </nav>
 
 
+
+<main>
+  <section >
+    <h1>Make remote work</h1>
+    <p> Get your team in sync, no matter your location. Streamline processes, 
+      create team rituals, and watch productivity soar.</p>
+      <button>Learn more</button>
+  </section>
+  <section class="hero-section">
+    
+  </section>
+</main>
   
 
-  Make remote work
+  
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
+ 
 
-  Learn more
+  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Cokejnr</a>.
   </div>
 </body>
 </html>
