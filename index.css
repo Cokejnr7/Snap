@@ -10,6 +10,12 @@
     --almost-white: hsl(0, 0%, 98%);
     --medium-gray: hsl(0, 0%, 41%);
     --almost-black: hsl(0, 0%, 8%);
+    --dropdown-shadow: hsl(0, 0%, 8%,0.15);
+}
+
+html{
+    width: 100%;
+    height: 100%;
 }
 
 body{
@@ -69,6 +75,7 @@ nav li{
 
 .nav-link:hover{
     color: var(--almost-black);
+    fill: black;
 }
 
 .logo{
@@ -105,11 +112,19 @@ nav button:hover{
     position: absolute;
     display: flex;
     flex-direction: column;
-    bottom: -100;
     gap: 10px;
-    padding: 15px 30px;
-    box-shadow: 0px 0px 5px var(--almost-black);
+    padding: 20px 20px;
+    background-color: white;
+    box-shadow: 0px 0px 5px var(--dropdown-shadow);
     border-radius: 12px;
+}
+
+.features{
+    left: -70%;
+}
+
+.more,.features{
+    top: 30px;
 }
 
 .drop-down li{
@@ -119,6 +134,11 @@ nav button:hover{
 }
 
 
+.nested div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 
 
 /* end navbar style */
@@ -131,7 +151,9 @@ main{
     padding: 0 16% ;
     padding-right: 10%;
     display: flex;
-    gap: 70px;
+    width: 100%;
+    justify-content: space-between;
+    /* gap: 70px; */
 }
 
 main h1{
@@ -142,7 +164,9 @@ main h1{
 main img{
     /* height: auto; */
     height: 600px;
-    width: 500px;
+    width: 100%;
+    /* min-width: 400px; */
+    /* object-fit: cover; */
 }
 
 main button{
@@ -186,4 +210,6 @@ footer{
     width: 100%;
     display: flex;
     justify-content: center;
+    position: fixed;
+    bottom: 0;
 }
