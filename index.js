@@ -1,21 +1,31 @@
-const nested = document.querySelectorAll(".drop");
+// const drop = document.querySelectorAll(".drop");
+// const nested = document.querySelectorAll(".nested");
 
-for (let li of nested) {
-  li.addEventListener("mouseenter", handleMouseEnter);
-  li.addEventListener("mouseleave", handleMouseLeave);
-}
+// // for (let li of drop) {
+// //   li.addEventListener("mouseenter", handleMouseEnter);
+// //   li.addEventListener("mouseleave", handleMouseLeave);
+// // }
 
-function changeColor(e, color) {
-  let svg = e.target.children[1];
-  let path = svg.children[0];
+// for (let li of nested) {
+//   li.addEventListener("mouseenter", handleMouseEnter);
+//   li.addEventListener("mouseleave", handleMouseLeave);
+// }
 
-  path.style.stroke = color;
-}
+// function changeColor(e, color) {
+//   let svg = e.target.firstElementChild.firstElementChild.lastElementChild;
+//   let path = svg.firstElementChild;
+//   let dropDown = e.target.lastElementChild;
 
-function handleMouseEnter(e) {
-  changeColor(e, "black");
-}
+//   dropDown.classList.toggle("show-dropdown");
 
-function handleMouseLeave(e) {
-  changeColor(e, "#696969");
-}
+//   console.log(e.target, svg);
+//   path.style.stroke = color;
+// }
+
+// function handleMouseEnter(e) {
+//   changeColor(e, "black");
+// }
+
+// function handleMouseLeave(e) {
+//   changeColor(e, "#696969");
+// }

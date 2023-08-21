@@ -75,7 +75,14 @@ nav li{
 
 .nav-link:hover{
     color: var(--almost-black);
-    fill: black;
+}
+
+.nav-link:hover .fill{
+    stroke: var(--almost-black);
+}
+
+.nested:hover .drop-down{
+    display: flex;
 }
 
 .logo{
@@ -110,13 +117,13 @@ nav button:hover{
 
 .drop-down{
     position: absolute;
-    display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 20px 20px;
     background-color: white;
     box-shadow: 0px 0px 5px var(--dropdown-shadow);
     border-radius: 12px;
+    display: none;
 }
 
 .features{
@@ -141,6 +148,7 @@ nav button:hover{
 }
 
 
+
 /* end navbar style */
 
 
@@ -163,10 +171,11 @@ main h1{
 
 main img{
     /* height: auto; */
-    height: 600px;
+    height: 80vh;
     width: 100%;
+
     /* min-width: 400px; */
-    /* object-fit: cover; */
+    object-fit: cover;
 }
 
 main button{
