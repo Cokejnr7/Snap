@@ -36,6 +36,10 @@ button{
     font-size: 16px;
 }
 
+path{
+    transform-origin: 50% 50%;
+}
+
 
 /* nav bar style */
 
@@ -73,17 +77,25 @@ nav li{
     position: relative;
 }
 
-.nav-link:hover{
+
+.nav-link:hover,
+.action a:hover,
+.nested:hover span{
+    cursor: pointer;
     color: var(--almost-black);
 }
 
-.nav-link:hover .fill{
+.nested:hover .fill,.drop-down:hover .fill{
     stroke: var(--almost-black);
+    transform: rotateX(180deg);
 }
+
 
 .nested:hover .drop-down{
     display: flex;
+    /* transform: ; */
 }
+
 
 .logo{
     flex: 1;
@@ -118,12 +130,16 @@ nav button:hover{
 .drop-down{
     position: absolute;
     flex-direction: column;
-    gap: 10px;
-    padding: 20px 20px;
+    gap: 15px;
+    padding: 15px 20px;
     background-color: white;
     box-shadow: 0px 0px 5px var(--dropdown-shadow);
     border-radius: 12px;
     display: none;
+}
+
+.drop-down li{
+    min-width: 75px
 }
 
 .features{
@@ -131,16 +147,18 @@ nav button:hover{
 }
 
 .more,.features{
-    top: 30px;
+    top: 18px;
 }
 
-.drop-down li{
+
+.features a{
     display: flex;
     gap: 12px;
-    min-width: 80px;
 }
 
-
+.nested span{
+    color: var(--medium-gray);
+}
 .nested div{
     display: flex;
     align-items: center;
