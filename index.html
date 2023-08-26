@@ -13,7 +13,39 @@
 </head>
 
 <body>
+  <div class="mobile-nav">
+    <div>
+      <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg"><g fill="#151515" fill-rule="evenodd"><path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z"/></g></svg>
+    </div>
+    <ul>
+      <li class="mobile-nested">Features <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+        <path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/>
+        </svg>
+        <ul>
+          <li></li>
+        </ul>
+      </li>
+      <li class="mobile-nested" >Company <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+        <path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/>
+        </svg>
+        <ul>
+          <li>History</li>
+          <li>Our Team</li>
+          <li>Blog</li>
+        </ul>
+      </li>
+      <li class="">Career</li>
+      <li class="">About</li>
+    </ul>
+
+    <ul class="mobile-action">
+      <li>Login</li>
+      <li><button>Register</button></li>
+    </ul>
+      
+  </div>
   <nav>
+   
     <div class="logo">
       <img src="images/logo.svg" alt="logo">
     </div>
@@ -137,7 +169,7 @@
   <main>
     <section class="details">
       <div class="promotion">
-        <h1>Make <br> remote work</h1>
+        <h1>Make <br>remote work</h1>
         <p> Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.</p>
         <span><button>Learn more</button></span>
@@ -165,9 +197,10 @@
         </svg>
       </div>
     </section>
-    <section class="hero-section">
-      <img src="images/image-hero-desktop.png" alt="hero image">
-    </section>
+    <picture class="hero-section">
+      <source srcset="images/image-hero-mobile.png" media="(max-width: 480px)">
+      <img srcset="images/image-hero-desktop.png" alt="hero image">
+    </picture>
   </main>
 
 
